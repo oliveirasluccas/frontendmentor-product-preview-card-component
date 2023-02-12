@@ -1,24 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
 body {
     background-color: hsl(31, 58%, 86%);
+    margin: 0px;
+    display: block;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-type {
+    text-align: justify;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+}
+
+.item-title {
+    text-align: left;
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: hsl(212, 21%, 14%);
+    line-height: 35px;
 }
 
 .card {
-    background-color: hsl(30, 38%, 92%);
+    max-width: 600px;
+    background-color: white;
+    border-radius: 5%;
     display: flex;
 }
 
 .item-preview {
-    text-align: center;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    font-size: 14px;
+    align-content: center;
+    margin-left: 5%;
+    margin-right: 3%;
+    color: hsl(228, 12%, 48%);
+    line-height: 25px;
 }
 
 .item-price-row {
+    display:flex;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.item-actual-price {
+
     display: flex;
-    align-content: space-between;
+    justify-content: left;
+    align-items: left;
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%)
+}
+
+.item-description {
+    font-size: 14px;
+}
+
+
+.item-old-price {
+    padding-inline: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through
 }
 
 img {
     width: 50%;
+    border-bottom-left-radius: 5%;
+    border-top-left-radius: 5%;
 }
+
+button {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    background-color: hsl(158, 36%, 37%);
+    margin-bottom: 5%;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: hsl(159, 44%, 27%);
+}
+
+svg {
+    padding-right: 9px;
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+    background: hsl(30, 38%, 92%);
+    color: grey;
+}
+
+
+
+
+
+
+
+
 /* # Front-end Style Guide
 
 ## Layout
